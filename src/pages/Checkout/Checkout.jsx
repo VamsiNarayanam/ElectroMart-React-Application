@@ -23,7 +23,7 @@ const Checkout = () => {
 
     const options = {
 
-      key: "rzp_test_SDuFyl6IM1HePf",
+      key: "rzp_test_SEnqidbpo8UGuu",
       amount: totalPrice * 100,
       currency: "INR",
       name: "ElectroMart",
