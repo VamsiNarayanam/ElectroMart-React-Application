@@ -10,8 +10,11 @@ const Navbar = () => {
   return (
 
     <nav className="navbar">
+      <div className="logo-container">
+        <img src="/logo.png" alt="ElectroMart Logo"></img>
+        <h2>ElectroMart</h2>
+      </div>
 
-      <h2>ElectroMart</h2>
 
       <div className="nav-links">
 
