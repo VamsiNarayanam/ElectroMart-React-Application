@@ -1,4 +1,34 @@
+import iphone15 from "../assets/images/iphone15.webp";
+import samsungS24 from "../assets/images/samsungS24.jfif";
+import oneplus12 from "../assets/images/oneplus12.webp";
+import redmi13 from "../assets/images/redmi13.webp";
+import macbookM2 from "../assets/images/macbookM2.jpg";
+import dell13 from "../assets/images/dell13.jfif";
+import pavillion15 from "../assets/images/pavillion15.jfif";
+import zenbook14 from "../assets/images/Zenbook14.jfif";
+import samsung4K from "../assets/images/samsung4K.webp";
+import lgOLED from "../assets/images/lgOLED.avif";
+import samsungQLED from "../assets/images/samsungQLED.webp";
+import phillips55 from "../assets/images/phillips55.jfif";
+import sonyWH from "../assets/images/sonyWH.webp";
+import boseComfort45 from "../assets/images/boseComfort45.png";
+import senhesier4 from "../assets/images/senhesier4.jfif";
+import jblM2 from "../assets/images/jblM2.jfif";
+import applePods from "../assets/images/applePods.webp";
+import boat192 from "../assets/images/boat192.png";
+import samsungbud2 from "../assets/images/samsungbud2.jpeg";
+import nothing2 from "../assets/images/nothing2.jpg";
+import jbl5 from "../assets/images/jbl5.webp";
+import sonySRS from "../assets/images/sonySRS.jpg";
+import marshall2 from "../assets/images/marshall2.webp";
+import boat1200 from "../assets/images/boat1200.jpg";
+import galaxy6 from "../assets/images/galaxy6.jfif";
+import apple9 from "../assets/images/apple9.jfif";
+import oneplus2 from "../assets/images/oneplus2.jpg";
+import noiseultra3 from "../assets/images/noiseultra3.webp";
+
 const electronicsData = [
+
   {
     id: 1,
     name: "iPhone 15",
@@ -6,7 +36,7 @@ const electronicsData = [
     category: "Mobile",
     brand: "Apple",
     rating: 4.8,
-    image: "https://inspireonline.in/cdn/shop/files/iPhone_15_Black_PDP_Image_Position-1__en-IN_f66938eb-76a2-4d2f-a6c3-ebeeda3c461c.jpg?v=1694605265",
+    image: iphone15,
     description: "Premium smartphone with A16 Bionic chip, advanced camera system, and smooth iOS experience.",
   },
   {
@@ -16,8 +46,8 @@ const electronicsData = [
     category: "Mobile",
     brand: "Samsung",
     rating: 4.6,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyb5PmfJx-cKsErjWC7Fwsl-mhBNxAhvBJ5Q&s",
-    description: "Flagship Android phone with powerful performance, AI features, and stunning AMOLED display.",
+    image: samsungS24,
+    description: "Flagship Android phone with powerful performance, AI features, and stunning AMOLED display."
   },
   {
     id: 3,
@@ -26,7 +56,7 @@ const electronicsData = [
     category: "Mobile",
     brand: "OnePlus",
     rating: 4.5,
-    image: "https://i.gadgets360cdn.com/large/oneplus_12_white_1717415157415.jpg",
+    image: oneplus12,
     description: "High-performance smartphone with fast charging, smooth OxygenOS, and flagship-level specs.",
   },
   {
@@ -36,10 +66,9 @@ const electronicsData = [
     category: "Mobile",
     brand: "Xiaomi",
     rating: 4.4,
-    image: "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303570_0_r5kk8z.png",
+    image: redmi13,
     description: "Value-for-money phone offering strong camera performance and AMOLED display.",
   },
-
   {
     id: 5,
     name: "MacBook Air M2",
@@ -47,7 +76,7 @@ const electronicsData = [
     category: "Laptop",
     brand: "Apple",
     rating: 4.8,
-    image: "https://m.media-amazon.com/images/I/71f5Eu5lJSL.jpg",
+    image: macbookM2,
     description: "Ultra-thin laptop powered by Apple M2 chip with excellent battery life and performance.",
   },
   {
@@ -57,7 +86,7 @@ const electronicsData = [
     category: "Laptop",
     brand: "Dell",
     rating: 4.6,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJOQEwLFbD6QlsLUMrQjUgwUz4_lAm_vNZfw&s",
+    image: dell13,
     description: "Premium Windows ultrabook with compact design and high-resolution display.",
   },
   {
@@ -67,7 +96,7 @@ const electronicsData = [
     category: "Laptop",
     brand: "HP",
     rating: 4.3,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJry9KSKeCdfQ8_zXynxrBOEepWk6ZzDlrw&s",
+    image: pavillion15,
     description: "Reliable everyday laptop suitable for work, study, and entertainment.",
   },
   {
@@ -77,10 +106,9 @@ const electronicsData = [
     category: "Laptop",
     brand: "ASUS",
     rating: 4.5,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDemWqn38YyY5RcoIR9FfrrymrDI6ygOwTAA&s",
+    image: zenbook14,
     description: "Sleek and lightweight laptop with premium build quality and vibrant display.",
   },
-
   {
     id: 9,
     name: "Samsung 55\" 4K Smart TV",
@@ -88,7 +116,7 @@ const electronicsData = [
     category: "Television",
     brand: "Samsung",
     rating: 4.4,
-    image: "https://img-prd-pim.poorvika.com/product/samsung-4k-ultra-hd-led-smart-tv-du7000-55-inch-front-view-model.png",
+    image:samsung4K,
     description: "4K UHD Smart TV delivering sharp visuals and immersive entertainment experience.",
   },
   {
@@ -98,7 +126,7 @@ const electronicsData = [
     category: "Television",
     brand: "LG",
     rating: 4.7,
-    image: "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/c4-gallery/oled48c46la/gallery/OLED48C46LA-TV-Soundbars-right-facing-side-view-DZ-03.jpg/jcr:content/renditions/thum-1600x1062.jpeg",
+    image: lgOLED,
     description: "OLED TV with perfect blacks, vivid colors, and cinematic viewing quality.",
   },
   {
@@ -108,7 +136,7 @@ const electronicsData = [
     category: "Television",
     brand: "Samsung",
     rating: 4.5,
-    image: "https://images.samsung.com/is/image/samsung/p6pim/in/qa43qef1aulxl/gallery/in-qled-qef1-qa43qef1aulxl-545918195",
+    image: samsungQLED,
     description: "QLED Smart TV with bright display, smart features, and powerful sound.",
   },
   {
@@ -118,10 +146,9 @@ const electronicsData = [
     category: "Television",
     brand: "Philips",
     rating: 4.3,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqsUm0alucqo9IJYUgmzCBKlb6F8ueUrnvCQ&s",
+    image: phillips55,
     description: "Affordable 4K Smart TV with clear picture quality and smart connectivity.",
   },
-
   {
     id: 13,
     name: "Sony WH-1000XM5",
@@ -129,7 +156,7 @@ const electronicsData = [
     category: "Headphones",
     brand: "Sony",
     rating: 4.7,
-    image: "https://in.static.webuy.com/product_images/Electronics/Headphones/4548736132580B_l.jpg",
+    image: sonyWH,
     description: "Industry-leading noise cancelling headphones with premium sound quality.",
   },
   {
@@ -139,7 +166,7 @@ const electronicsData = [
     category: "Headphones",
     brand: "Bose",
     rating: 4.7,
-    image: "https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45-LE_Left-Angle_1200x1022_Midnight-Blue_RGB.png/jcr:content/renditions/cq5dam.web.1920.1920.png",
+    image: boseComfort45,
     description: "Comfort-focused noise cancelling headphones with balanced sound.",
   },
   {
@@ -149,7 +176,7 @@ const electronicsData = [
     category: "Headphones",
     brand: "Sennheiser",
     rating: 4.6,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4MJ1RAfX1U3RSIcCCd5A5ZQpjgU1aPgB_w&s",
+    image: senhesier4,
     description: "High-end wireless headphones offering rich audio and long battery life.",
   },
   {
@@ -159,10 +186,9 @@ const electronicsData = [
     category: "Headphones",
     brand: "JBL",
     rating: 4.5,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBiJa15lV0JtoLwXyC5SebQXE1dpFy1x8RFw&s",
+    image: jblM2,
     description: "Premium headphones with adaptive noise cancelling and JBL signature sound.",
   },
-
   {
     id: 17,
     name: "Apple AirPods Pro (2nd Gen)",
@@ -170,7 +196,7 @@ const electronicsData = [
     category: "Earbuds",
     brand: "Apple",
     rating: 4.6,
-    image: "https://mobileplanet.ua/uploads/product/2023-9-27/apple-airpods-pro-2nd-generation-with-magsafe-char-287824.webp",
+    image: applePods,
     description: "True wireless earbuds with active noise cancellation and spatial audio.",
   },
   {
@@ -180,7 +206,7 @@ const electronicsData = [
     category: "Earbuds",
     brand: "boAt",
     rating: 4.4,
-    image: "https://e2simages.excess2sell.com/images/products/boatatetebl1722509241784_1722509242_lg.png",
+    image: boat192,
     description: "Budget-friendly wireless earbuds with long playback and deep bass.",
   },
   {
@@ -190,7 +216,7 @@ const electronicsData = [
     category: "Earbuds",
     brand: "Samsung",
     rating: 4.6,
-    image: "https://www.jiomart.com/images/product/original/493285923/samsung-galaxy-buds2-pro-true-wireless-earbud-with-active-noise-cancellation-upto-18-hrs-of-playtime-360-audio-ergonomic-design-ipx7-water-resistance-voice-wake-up-24-bit-hi-fi-audio-graphite-digital-o493285923-p593418656-6-202511251830.jpeg",
+    image: samsungbud2,
     description: "Premium earbuds with immersive sound, ANC, and seamless Samsung integration.",
   },
   {
@@ -200,10 +226,9 @@ const electronicsData = [
     category: "Earbuds",
     brand: "Nothing",
     rating: 4.4,
-    image: "https://m.media-amazon.com/images/I/51igkIlxilL._AC_UF1000,1000_QL80_.jpg",
+    image: nothing2,
     description: "Stylish transparent earbuds with balanced sound and ANC support.",
   },
-
   {
     id: 21,
     name: "JBL Charge 5",
@@ -211,7 +236,7 @@ const electronicsData = [
     category: "Speaker",
     brand: "JBL",
     rating: 4.5,
-    image: "https://dukaan.b-cdn.net/700x700/webp/media/3f531e3f-3229-45af-9343-91cbff596f43.jpg",
+    image: jbl5,
     description: "Portable Bluetooth speaker with powerful bass and long battery life.",
   },
   {
@@ -221,7 +246,7 @@ const electronicsData = [
     category: "Speaker",
     brand: "Sony",
     rating: 4.6,
-    image: "https://5.imimg.com/data5/SELLER/Default/2022/2/UW/SK/ZC/10164444/81tvcv9n1tl-sl1500-.jpg",
+    image: sonySRS,
     description: "Extra bass portable speaker with punchy sound and durable build.",
   },
   {
@@ -231,7 +256,7 @@ const electronicsData = [
     category: "Speaker",
     brand: "Marshall",
     rating: 4.6,
-    image: "https://www.marshallheadphones.com/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwb373c09b/images/categories/speakers/emberton-ii/mobile/01-usp-mobile.png",
+    image: marshall2,
     description: "Compact premium speaker with iconic Marshall sound and design.",
   },
   {
@@ -241,10 +266,9 @@ const electronicsData = [
     category: "Speaker",
     brand: "boAt",
     rating: 4.3,
-    image: "https://i.gadgets360cdn.com/products/large/boAt-stone-1200-black-720x-800x898-1612031976.jpg",
+    image: boat1200,
     description: "Affordable portable speaker with loud sound and rugged design.",
   },
-
   {
     id: 25,
     name: "Samsung Galaxy Watch 6",
@@ -252,7 +276,7 @@ const electronicsData = [
     category: "Smartwatch",
     brand: "Samsung",
     rating: 4.5,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEf6Jwz18kXjuOWHilQG0Xf6D8TmWP05vSgQ&s",
+    image: galaxy6,
     description: "Advanced smartwatch with health tracking and AMOLED display.",
   },
   {
@@ -262,7 +286,7 @@ const electronicsData = [
     category: "Smartwatch",
     brand: "Apple",
     rating: 4.7,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_7AaNNNMdVtNXMCCRxQZ0f8vVlD9JJtjT3g&s",
+    image: apple9,
     description: "Premium smartwatch with powerful health features and seamless iOS sync.",
   },
   {
@@ -272,7 +296,7 @@ const electronicsData = [
     category: "Smartwatch",
     brand: "OnePlus",
     rating: 4.4,
-    image: "https://m.media-amazon.com/images/I/61y2VVWcGBL._SL1500_.jpg",
+    image: oneplus2,
     description: "Stylish smartwatch with long battery life and smooth performance.",
   },
   {
@@ -282,7 +306,7 @@ const electronicsData = [
     category: "Smartwatch",
     brand: "Noise",
     rating: 4.2,
-    image: "https://assets.myntassets.com/w_360,q_50,,dpr_2,fl_progressive,f_webp/assets/images/28411118/2024/3/21/0f4dc3fd-23a7-4580-b093-b81fe3accf3e1711014804865NoiseColorFitUltra3Smartwatch-TealBlue1.jpg",
+    image: noiseultra3,
     description: "Budget smartwatch with AMOLED display and essential fitness tracking.",
   },
 ];
