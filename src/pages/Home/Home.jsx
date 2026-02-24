@@ -4,14 +4,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import phoneslider from "../../assets/homeImages/Phoneslider.jfif";
+import laptopslider from "../../assets/homeImages/laptopslider.avif";
+import watchslider from "../../assets/homeImages/watchslider.avif";
+import headphoneslider from "../../assets/homeImages/headphoneslider.jfif";
+import iphone15 from "../../assets/images/iphone15.webp";
+import sonyWH from "../../assets/images/sonyWH.webp";
+import noiseultra3 from "../../assets/images/noiseultra3.webp";
+import jbl5 from "../../assets/images/jbl5.webp";
+import zenbook14 from "../../assets/images/Zenbook14.jfif";
+import lgOLED from "../../assets/images/lgOLED.avif";
 
 const Home = () => {
 
   const heroImages = [
-  "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-  "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+
+  phoneslider,
+  laptopslider,
+  watchslider,
+  headphoneslider,
 ];
 
   return (
@@ -56,11 +67,11 @@ const Home = () => {
 
         <div className="category-grid">
           {[
-            { name: "Mobiles", img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" },
-            { name: "Headphones", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBiJa15lV0JtoLwXyC5SebQXE1dpFy1x8RFw&s" },
-            { name: "Smartwatches", img: "https://m.media-amazon.com/images/I/61y2VVWcGBL._SL1500_.jpg" },
-            { name: "Televisions", img: "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/c4-gallery/oled48c46la/gallery/OLED48C46LA-TV-Soundbars-right-facing-side-view-DZ-03.jpg/jcr:content/renditions/thum-1600x1062.jpeg" },
-            { name: "Speakers", img: "https://5.imimg.com/data5/SELLER/Default/2022/2/UW/SK/ZC/10164444/81tvcv9n1tl-sl1500-.jpg" },
+            { name: "Mobiles", img: phoneslider },
+            { name: "Headphones", img: headphoneslider },
+            { name: "Smartwatches", img: watchslider },
+            { name: "Televisions", img: lgOLED  },
+            { name: "Speakers", img: jbl5 },
           ].map((item, index) => (
 
             <div className="category-card" key={index}>
@@ -95,27 +106,27 @@ const Home = () => {
             {
               name: "iPhone 15",
               price: "₹79,999",
-              img: "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
+              img: iphone15,
             },
             {
               name: "Sony WH-1000XM5",
               price: "₹29,999",
-              img: "https://in.static.webuy.com/product_images/Electronics/Headphones/4548736132580B_l.jpg",
+              img: sonyWH,
             },
             {
               name: "Noise ColorFit Ultra 3",
               price: "₹5,999",
-              img: "https://assets.myntassets.com/w_360,q_50,,dpr_2,fl_progressive,f_webp/assets/images/28411118/2024/3/21/0f4dc3fd-23a7-4580-b093-b81fe3accf3e1711014804865NoiseColorFitUltra3Smartwatch-TealBlue1.jpg",
+              img: noiseultra3,
             },
             {
               name: "JBL Charge 5",
               price: "₹15,999",
-              img: "https://dukaan.b-cdn.net/700x700/webp/media/3f531e3f-3229-45af-9343-91cbff596f43.jpg",
+              img: jbl5,
             },
             {
               name: "ASUS Zenbook 14",
               price: "₹76999",
-              img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDemWqn38YyY5RcoIR9FfrrymrDI6ygOwTAA&s",
+              img: zenbook14 ,
             }
           ].map((product, index) => (
 
