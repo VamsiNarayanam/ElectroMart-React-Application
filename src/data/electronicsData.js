@@ -21,7 +21,7 @@ import nothing2 from "../assets/images/nothing2.jpg";
 import jbl5 from "../assets/images/jbl5.webp";
 import sonySRS from "../assets/images/sonySRS.jpg";
 import marshall2 from "../assets/images/marshall2.webp";
-import boat1200 from "../assets/images/boat1200.jpg";
+import boat1200 from "../assets/images/boAt1200.jpg";
 import galaxy6 from "../assets/images/galaxy6.jfif";
 import apple9 from "../assets/images/apple9.jfif";
 import oneplus2 from "../assets/images/oneplus2.jpg";
