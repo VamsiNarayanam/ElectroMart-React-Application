@@ -4,26 +4,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import phoneslider from "../../assets/homeImages/Phoneslider.jfif";
+import phoneslider from "../../assets/homeImages/Phoneslider.webp";
 import laptopslider from "../../assets/homeImages/laptopslider.avif";
 import watchslider from "../../assets/homeImages/watchslider.avif";
-import headphoneslider from "../../assets/homeImages/headphoneslider.jfif";
+import headphoneslider from "../../assets/homeImages/headphoneslider.webp";
 import iphone15 from "../../assets/images/iphone15.webp";
 import sonyWH from "../../assets/images/sonyWH.webp";
 import noiseultra3 from "../../assets/images/noiseultra3.webp";
 import jbl5 from "../../assets/images/jbl5.webp";
-import zenbook14 from "../../assets/images/Zenbook14.jfif";
+import zenbook14 from "../../assets/images/Zenbook14.webp";
 import lgOLED from "../../assets/images/lgOLED.avif";
+import imageMetadata from "../../assets/imageMetadata";
 
 const Home = () => {
 
   const heroImages = [
-
-  phoneslider,
-  laptopslider,
-  watchslider,
-  headphoneslider,
-];
+    phoneslider,
+    laptopslider,
+    watchslider,
+    headphoneslider,
+  ];
 
   return (
 
@@ -50,11 +50,14 @@ const Home = () => {
           disableOnInteraction: false,
         }}>
 
-        {heroImages.map((img, index) => (
-          <SwiperSlide key={index}>
-            <img src={img} alt={`slide-${index}`} loading="lazy" />
-          </SwiperSlide>
-        ))}
+        {heroImages.map((img, index) => {
+          const dims = imageMetadata[img.split('/').pop()] || {};
+          return (
+            <SwiperSlide key={index}>
+              <img src={img} alt={`slide-${index}`} loading="lazy" {...dims} />
+            </SwiperSlide>
+          );
+        })} 
 
       </Swiper>
 
@@ -66,24 +69,23 @@ const Home = () => {
         <h2>Shop by Category</h2>
 
         <div className="category-grid">
-          {[
+{[
             { name: "Mobiles", img: phoneslider },
             { name: "Headphones", img: headphoneslider },
             { name: "Smartwatches", img: watchslider },
-            { name: "Televisions", img: lgOLED  },
+            { name: "Televisions", img: lgOLED },
             { name: "Speakers", img: jbl5 },
-          ].map((item, index) => (
-
-            <div className="category-card" key={index}>
-
-              <div className="card-img">
-                <img src={item.img} alt={item.name} loading="lazy" />
+          ].map((item, index) => {
+            const dims = imageMetadata[item.img.split('/').pop()] || {};
+            return (
+              <div className="category-card" key={index}>
+                <div className="card-img">
+                  <img src={item.img} alt={item.name} loading="lazy" {...dims} />
+                </div>
+                <h3>{item.name}</h3>
               </div>
-
-              <h3>{item.name}</h3>
-
-            </div>
-          ))}
+            );
+          })}
 
         </div>
 
@@ -135,7 +137,12 @@ const Home = () => {
               <div className="slider-card">
 
                 <div className="card-img">
-                  <img src={product.img} alt={product.name} loading="lazy"/>
+                  <img
+                    src={product.img}
+                    alt={product.name}
+                    loading="lazy"
+                    {...(imageMetadata[product.img.split('/').pop()] || {})}
+                  />
                 </div>
 
                 <h4>{product.name}</h4>
