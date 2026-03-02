@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
 
-    <div className="contact-page">
+    <div className="contact-page fade-in">
 
       <div className="contact-card">
         <h2>Contact Us</h2>

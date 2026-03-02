@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
   return (
 
-   <div className="product-details">
+   <div className="product-details fade-in">
    <div className="product-card-glass">
 
    <div className="product-image">

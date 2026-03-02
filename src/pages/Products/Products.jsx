@@ -12,7 +12,7 @@ const Products = () => {
 
   return (
 
-    <div className="products-page">
+    <div className="products-page fade-in">
 
       <h2>Explore Our Products</h2>
 
