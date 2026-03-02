@@ -52,7 +52,7 @@ const Home = () => {
 
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
-            <img src={img} alt={`slide-${index}`} />
+            <img src={img} alt={`slide-${index}`} loading="lazy" />
           </SwiperSlide>
         ))}
 
@@ -77,7 +77,7 @@ const Home = () => {
             <div className="category-card" key={index}>
 
               <div className="card-img">
-                <img src={item.img} alt={item.name} />
+                <img src={item.img} alt={item.name} loading="lazy" />
               </div>
 
               <h3>{item.name}</h3>
@@ -135,7 +135,7 @@ const Home = () => {
               <div className="slider-card">
 
                 <div className="card-img">
-                  <img src={product.img} alt={product.name} />
+                  <img src={product.img} alt={product.name} loading="lazy"/>
                 </div>
 
                 <h4>{product.name}</h4>

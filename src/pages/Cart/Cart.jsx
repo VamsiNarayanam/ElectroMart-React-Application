@@ -20,7 +20,7 @@ const Cart = () => {
 
     <div key={item.id} className="cart-item">
 
-      <img src={item.image} alt={item.name} />
+      <img src={item.image} alt={item.name} loading="lazy"/>
 
       <div className="cart-info">
 

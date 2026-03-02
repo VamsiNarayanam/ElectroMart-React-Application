@@ -11,7 +11,7 @@ const Navbar = () => {
 
     <nav className="navbar">
       <div className="logo-container">
-        <img src="/logo.png" alt="ElectroMart Logo"></img>
+        <img src="/logo.png" alt="ElectroMart Logo" loading="lazy"/>
         <h2>ElectroMart</h2>
       </div>
 

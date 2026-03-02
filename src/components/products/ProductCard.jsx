@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
 
     <div className="product-card">
 
-      <img src={product.image} />
+      <img src={product.image} loading="lazy"/>
       <h3>{product.name}</h3>
       <p>₹{product.price}</p>
       <Link to={`/product/${product.id}`}>View</Link>

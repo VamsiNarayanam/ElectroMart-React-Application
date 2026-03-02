@@ -16,7 +16,7 @@ const ProductDetails = () => {
    <div className="product-card-glass">
 
    <div className="product-image">
-     <img src={product.image} alt={product.name} />
+     <img src={product.image} alt={product.name} loading="lazy"/>
    </div>
 
     <div className="product-info">
